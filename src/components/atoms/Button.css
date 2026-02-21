@@ -1,0 +1,81 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Sizes */
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+}
+
+.btn-md {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+}
+
+/* Variants */
+.btn-default:not(:disabled):hover {
+    background-color: var(--border-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.btn-primary:not(:disabled):hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+    border: none;
+}
+
+.btn-danger:not(:disabled):hover {
+    background-color: var(--danger-hover);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+}
+
+.btn-success:not(:disabled):hover {
+    background-color: var(--success-hover);
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-theme .btn-ghost:not(:disabled):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

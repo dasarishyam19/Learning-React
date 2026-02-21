@@ -1,0 +1,38 @@
+.input {
+    display: block;
+    width: 100%;
+    padding: var(--spacing-2) var(--spacing-3);
+    font-size: var(--text-base);
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--neutral-300);
+    border-radius: var(--radius-md);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--neutral-400);
+}
+
+.input:focus {
+    border-color: var(--primary-500);
+    box-shadow: 0 0 0 3px var(--primary-100);
+}
+
+.input:disabled {
+    background-color: var(--neutral-100);
+    opacity: 1;
+    cursor: not-allowed;
+}
+
+.error {
+    border-color: var(--danger-500);
+}
+
+.error:focus {
+    border-color: var(--danger-500);
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+    /* danger-500 with opacity */
+}
