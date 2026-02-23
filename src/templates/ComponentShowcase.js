@@ -62,14 +62,13 @@ export default function ComponentShowcase() {
 
                 <Modal isOpen={isOpen} onClose={close}>
                     <Modal.Header>
-                        <Text as="h3" variant="h2">Delete Confirmation</Text>
+                        <Text as="h3" variant="h2">Success</Text>
                     </Modal.Header>
                     <Modal.Body>
-                        <Text>Are you sure you want to delete this item? This action cannot be undone.</Text>
+                        <Text>Modal is working fine!</Text>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={close}>Cancel</Button>
-                        <Button variant="danger" onClick={close}>Delete</Button>
+                        <Button variant="primary" onClick={close}>Close</Button>
                     </Modal.Footer>
                 </Modal>
             </section>
