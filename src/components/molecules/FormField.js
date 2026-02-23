@@ -26,11 +26,18 @@ export const FormField = forwardRef(({
                 ref={ref}
                 id={id}
                 hasError={!!error}
+                aria-describedby={error ? `${id}-error` : undefined}
                 {...inputProps}
             />
 
             {error && (
-                <Typography as="span" variant="small" color="danger" className="form-field-error">
+                <Typography
+                    as="span"
+                    id={`${id}-error`}
+                    variant="small"
+                    color="danger"
+                    className="form-field-error"
+                >
                     {error}
                 </Typography>
             )}

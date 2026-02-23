@@ -22,6 +22,7 @@ export const Input = forwardRef(({
             placeholder={placeholder}
             disabled={disabled}
             className={`input-field ${errorClass} ${className}`.trim()}
+            aria-invalid={hasError ? 'true' : 'false'}
             {...props}
         />
     );
